@@ -15,5 +15,18 @@ public class Mundopc {
         orden1.agregarComputadora(computadora1);
         orden1.mostraOrden();
 
+        //creamos la computadora ASUS
+        Orden orden2 = new Orden();
+        Monitor monitorASUS = new Monitor("ASUS", 15);
+        Teclado tecladoASUS = new Teclado("Bluetooth", "ASUS-Teclado");
+        Mouse mouseASUS = new Mouse("Bluetooth", "ASUS");
+        Computadora computadora2 = new Computadora("ASUS", monitorASUS, tecladoASUS, mouseASUS);
+
+        //agregamos la computadora a la orden
+        orden2.agregarComputadora(computadora2);
+        orden2.mostraOrden();
+
+
+
     }
 }

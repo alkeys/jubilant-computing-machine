@@ -9,6 +9,7 @@ public class Orden {
     private static final int MAX_COMPUTADORAS = 10;
     public Orden(){
         computadoras = new Computadora[MAX_COMPUTADORAS];
+        this.idOrden = ++Orden.contadorOrdenes;
     }
     public void  agregarComputadora(Computadora computadora){
         if (contadorComputadoras < MAX_COMPUTADORAS) {
